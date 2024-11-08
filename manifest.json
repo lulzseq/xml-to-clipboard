@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "XML Clipboard",
+    "version": "1.0",
+    "description": "Easy copy tag value from XML file",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*.xml"],
+            "js": ["main.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "clipboardWrite"
+    ],
+    "icons": {
+        "128": "128.png"
+    }
+}
